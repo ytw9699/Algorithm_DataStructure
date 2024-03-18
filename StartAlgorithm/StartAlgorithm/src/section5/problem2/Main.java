@@ -16,7 +16,7 @@ class Main {
             }
         }
         for(int i=0; i<stack.size(); i++) {
-            answer += stack.get(i);
+            answer += stack.get(i);// vector 상속하기에 get 메소드 가능
         }
         return answer;
     }
