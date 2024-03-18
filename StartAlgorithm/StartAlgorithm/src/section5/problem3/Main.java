@@ -5,13 +5,10 @@ import java.util.*;
 class Main {
     public int solution(int[][] board, int[] moves){
         int answer=0;
-
         Stack<Integer> stack = new Stack<>();
 
         for(int postion : moves){
-
             for(int i=0; i<board.length; i++){
-
                 if(board[i][postion-1] != 0){ //인형 발견
 
                     int tmp = board[i][postion-1];//인형번호 저장

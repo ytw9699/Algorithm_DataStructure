@@ -5,11 +5,9 @@ import java.util.*;
 class Main {
     public int solution(String str){
         int answer=0;
-
         Stack<Integer> stack = new Stack<>();
 
         for(char x : str.toCharArray()){//352+*9-
-
             if(Character.isDigit(x)){//숫자인지 확인
                 stack.push(x-48);//0의 ASCII 값(48)을 빼기
 
