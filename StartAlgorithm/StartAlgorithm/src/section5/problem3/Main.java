@@ -46,5 +46,6 @@ class Main {
             moves[i]=kb.nextInt();
         }
         System.out.println(T.solution(board, moves));
+        System.out.println(3/2);
     }
 }
