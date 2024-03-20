@@ -1,5 +1,5 @@
 package section6.problem5;
-.
+
 import java.util.*;
 
 class Main {
