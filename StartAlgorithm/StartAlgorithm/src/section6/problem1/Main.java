@@ -6,14 +6,14 @@ class Main {
 
     public int[] solution(int n, int[] arr){
         for(int i=0; i<n-1; i++){
-            int idx=i;
+            int minIndex=i;
 
             for(int j=i+1; j<n; j++){
-                if(arr[j]<arr[idx]) idx=j;
+                if(arr[j]<arr[minIndex]) minIndex=j;
             }
             int tmp=arr[i];
-            arr[i]=arr[idx];
-            arr[idx]=tmp;
+            arr[i]=arr[minIndex];
+            arr[minIndex]=tmp;
         }
         return arr;
     }
