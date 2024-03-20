@@ -9,7 +9,9 @@ class Main {
             int minIndex=i;
 
             for(int j=i+1; j<n; j++){
-                if(arr[j]<arr[minIndex]) minIndex=j;
+                if(arr[j]<arr[minIndex]){
+                    minIndex=j;
+                }
             }
             int tmp=arr[i];
             arr[i]=arr[minIndex];
