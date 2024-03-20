@@ -1,19 +1,17 @@
-package section6.problem1;
+package section6.problem2;
 
 import java.util.*;
 
 class Main {
-
     public int[] solution(int n, int[] arr){
         for(int i=0; i<n-1; i++){
-            int minIndex=i;
-
-            for(int j=i+1; j<n; j++){
-                if(arr[j]<arr[minIndex]) minIndex=j;
+            for(int j=0; j<n-i-1; j++){
+                if(arr[j]>arr[j+1]){
+                    int tmp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=tmp;
+                }
             }
-            int tmp=arr[i];
-            arr[i]=arr[minIndex];
-            arr[minIndex]=tmp;
         }
         return arr;
     }
@@ -22,7 +20,7 @@ class Main {
         Scanner kb = new Scanner(System.in);
         int n=kb.nextInt();
         int[] arr=new int[n];
-        for(int i=0; i<n; i++){
+        for(int i=0; i<n; i++) {
             arr[i]=kb.nextInt();
         }
         for(int x : T.solution(n, arr)){
