@@ -26,6 +26,7 @@ class Main {
     public static void main(String[] args){
         Scanner kb = new Scanner(System.in);
         int n=kb.nextInt();
+
         ArrayList<Point> arr=new ArrayList<>();
 
         for(int i=0; i<n; i++){
